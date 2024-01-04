@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="basediv">
+        <input type="text" class="display" id="show"><br>
+        <input type="text" class="displayin" id="show1"><br>
+        <h4 class="text">Calculator</h4>
+        <div class="buttons">
+            <!--first row-->
+            <button id="firstbutton" class="topbuttonsize" onclick="cleardisplay()">C</button>
+            <button class="topbuttonsize" onclick="clearLastDigit()"><img src="icons/back.png" alt="" width="25px" height="25px"></button>
+            <button class="topbuttonsize" onclick="calculatePercentage()">%</button>
+            <button class="topbuttonsize" onclick="buttonclick('/')">/</button><br>
+            <!--first row end-->
+            <!--second row-->
+            <button id="firstbutton" class="buttonsize" onclick="buttonclick(7)">7</button>
+            <button class="buttonsize" onclick="buttonclick(8)">8</button>
+            <button class="buttonsize" onclick="buttonclick(9)">9</button>
+            <button class="topbuttonsize" onclick="buttonclick('*')">x</button>
+            <!--second row end--> 
+            <!--third row-->
+            <button id="firstbutton" class="buttonsize" onclick="buttonclick(4)">4</button>
+            <button class="buttonsize" onclick="buttonclick(5)">5</button>
+            <button class="buttonsize" onclick="buttonclick(6)">6</button>
+            <button class="topbuttonsize" onclick="buttonclick('-')">-</button>
+            <!--third row end-->
+            <!--fourth row -->
+            <button id="firstbutton" class="buttonsize" onclick="buttonclick(1)">1</button>
+            <button class="buttonsize" onclick="buttonclick(2)">2</button>
+            <button class="buttonsize" onclick="buttonclick(3)">3</button>
+            <button class="topbuttonsize" onclick="buttonclick('+')">+</button>
+            <!--fourth row end-->
+            <button class="buttonsize" onclick="buttonclick('0')">0</button>
+            <button class="buttonsize" onclick="buttonclick('.')">.</button>
+            <button class="equalbuttonsize" onclick="equalclick()">=</button><br>
+            
+            <!--fourth row end-->
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
